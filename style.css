@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+    line-height: 1.5;
+
+    background-color: #f8f9fc;
+}
+
+nav {
+    background-color: #000;
+    color: #fff;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    width: 100%;
+    padding: 0 1rem;
+}
+
+nav li {
+    display: inline-block;
+
+    font-size: 1.4rem;
+    text-transform: uppercase;
+
+    padding: 1.7rem;
+    width: 24.5%;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li:hover {
+    color: #000;
+    background-color: #ccc;
+    padding: 1rem 12rem;
+}
+
+/* header */
+
+header {
+    min-height: 75%;
+    width: 100%;
+
+    background: url(img/coffeehouse.jpg);
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    left: 0;
+
+    filter: grayscale(50%);
+
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 10rem;
+    font-weight: lighter;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+.opening-time {
+    background-color: #000;
+    color: #fff;
+
+    display: inline-block;
+
+    position: absolute;
+    left: 2rem;
+    bottom: 1rem;
+
+    font-size: 1.4rem;
+
+    padding: .2rem .5rem;
+}
+
+.address {
+    color: #fff;
+    font-size: 1.4rem;
+
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+}
+
+/* main */
+
+main {
+    width: 65%;
+
+    margin: auto;
+
+    position: relative;
+    left: 0;
+
+    font-size: 1.8rem;
+}
+
+#about h5,
+#menu h5,
+#where h5 {
+    background-color: #000;
+    color: #fff;
+
+    display: inline-block;
+
+    font-size: 1.8rem;
+
+    letter-spacing: 4px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+
+    position: relative;
+    left: 50%;
+    top: 10rem;
+    transform: translate(-50%);
+
+    margin-bottom: 14rem;
+    padding: .2rem 1rem;
+}
+
+#about p,
+#menu p,
+.FYI p {
+    margin: 2rem 0;
+}
+
+#about .quote {
+    background-color: #f1f1f1;
+    width: 100%;
+    border-left: #ccc solid .5rem;
+
+    padding: 1.5rem;
+}
+
+#about img,
+#menu img,
+#where img {
+    margin: 3rem 0;
+
+    filter: grayscale(70%);
+}
+
+#about img {
+    margin-top: 3rem;
+}
+
+.menu-list {
+    width: 100%;
+
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.menu-list .eat-drink {
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%);
+}
+
+.menu-list .eat-list-header,
+.menu-list .drink-list-header {
+    width: calc(50% - 3.2rem);
+    display: inline-block;
+    list-style: none;
+
+    text-align: center;
+
+    margin: .8rem;
+
+    cursor: pointer;
+}
+
+.clicked {
+    color: #fff;
+    background-color: #616161;
+}
+
+.menu-list .eat-list,
+.menu-list .drink-list {
+    width: 100%;
+    padding: 3rem;
+}
+
+
+.menu-list .eat-item,
+.menu-list .drink-item {
+    width: 100%;
+    margin-top: 4.5rem;
+}
+
+.menu-list .eat-item h6,
+.menu-list .drink-item h6 {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.menu-list .eat-item p,
+.menu-list .drink-item p {
+    color: #757575;
+}
+
+
+
+.FYI span {
+    background-color: #000;
+    color: #fff;
+
+    display: inline-block;
+
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    padding: .2rem 1rem;
+}
+
+.FYI form input {
+    width: 100%;
+
+    font-size: 1.6rem;
+
+    padding: 2rem 1rem;
+
+    margin-bottom: 2rem;
+}
+
+.FYI form button {
+    background-color: #000;
+    color: #fff;
+
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+    padding: 1rem;
+    margin-bottom: 5rem;
+
+    display: inline-block;
+}
+
+
+footer {
+    padding: 4rem;
+    font-size: 1.8rem;
+    text-align: center;
+
+    background-color: #f1f3f9;
+}
+
+footer a {
+    color: #000;
+}
+
+footer a:hover {
+    color: purple;
+}
+
+
+/* media queries */
+@media screen and (max-width: 992px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav li {
+        width: 24%;
+    }
+
+    main {
+        width: 95%;
+    }
+}
